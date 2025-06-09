@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Goulding Photography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111111;
+            color: #E5E7EB;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 1)), url('https://placehold.co/1920x1080/000000/FFFFFF?text=Dynamic+Motorsport+Shot');
+            background-size: cover;
+            background-position: center;
+        }
+        .gallery-img {
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        .nav-link:hover {
+            color: #FFFFFF;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #FFFFFF;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-50 backdrop-blur-md transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-black tracking-tighter text-white">BEN GOULDING</a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#portfolio" class="nav-link text-gray-300 font-semibold">Portfolio</a>
+                    <a href="#about" class="nav-link text-gray-300 font-semibold">About</a>
+                    <a href="#services" class="nav-link text-gray-300 font-semibold">Services</a>
+                    <a href="#contact" class="bg-white text-black font-bold py-2 px-5 rounded-full hover:bg-gray-200 transition-colors duration-300">Contact</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </nav>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#portfolio" class="block py-2 px-6 text-gray-300 hover:bg-gray-800">Portfolio</a>
+            <a href="#about" class="block py-2 px-6 text-gray-300 hover:bg-gray-800">About</a>
+            <a href="#services" class="block py-2 px-6 text-gray-300 hover:bg-gray-800">Services</a>
+            <a href="#contact" class="block py-2 px-6 text-gray-300 hover:bg-gray-800">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="home" class="hero-bg h-screen flex items-center justify-center text-center">
+        <div class="px-6">
+            <h1 class="text-5xl md:text-8xl lg:text-9xl font-black text-white uppercase tracking-tighter leading-tight">Capturing <span class="text-gray-300">Intensity</span></h1>
+            <p class="text-lg md:text-xl text-gray-300 mt-4 max-w-2xl mx-auto">From the roar of the racetrack to the focus of the fight. Specializing in high-impact sport and action photography.</p>
+        </div>
+    </main>
+
+    <div class="container mx-auto px-6 py-20 md:py-32">
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="mb-20 md:mb-32">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-12 md:mb-16 tracking-tighter">My Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <!-- Replace these placeholders with your actual photos -->
+                <div class="overflow-hidden rounded-lg shadow-lg group">
+                    <img src="https://placehold.co/600x800/1a1a1a/FFFFFF?text=Motorsport+1" alt="Motorsport Photography" class="w-full h-full object-cover gallery-img">
+                </div>
+                 <div class="overflow-hidden rounded-lg shadow-lg group lg:col-span-2">
+                    <img src="https://placehold.co/1200x800/1a1a1a/FFFFFF?text=BJJ+Action" alt="BJJ Photography" class="w-full h-full object-cover gallery-img">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg group lg:col-span-2">
+                     <img src="https://placehold.co/1200x800/1a1a1a/FFFFFF?text=Pet+Portrait" alt="Pet Photography" class="w-full h-full object-cover gallery-img">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg group">
+                    <img src="https://placehold.co/600x800/1a1a1a/FFFFFF?text=Trackside+2" alt="Motorsport Photography" class="w-full h-full object-cover gallery-img">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg group">
+                    <img src="https://placehold.co/600x800/1a1a1a/FFFFFF?text=Athlete+Portrait" alt="Sport Portrait Photography" class="w-full h-full object-cover gallery-img">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg group">
+                    <img src="https://placehold.co/600x800/1a1a1a/FFFFFF?text=Dog+Action+Shot" alt="Pet Photography" class="w-full h-full object-cover gallery-img">
+                </div>
+                 <div class="overflow-hidden rounded-lg shadow-lg group">
+                    <img src="https://placehold.co/600x800/1a1a1a/FFFFFF?text=Podium+Celebration" alt="Motorsport Photography" class="w-full h-full object-cover gallery-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-20 md:mb-32 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/800x800/1a1a1a/FFFFFF?text=Your+Portrait" alt="Ben Goulding" class="rounded-lg shadow-xl w-full">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-4xl md:text-5xl font-black tracking-tighter mb-4">A Little About Me</h2>
+                <p class="text-gray-400 mb-4 leading-relaxed">
+                    What started as a passion for the speed and drama of motorcycle racing has evolved into a broader love for capturing peak moments in sport and life. My goal is always the same: to freeze a moment in time that tells a story of dedication, emotion, and action.
+                </p>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                    Now, I'm channeling that same energy into Brazilian Jiu-Jitsu and other sports, finding the art within the athleticism. Whether it's on the track, the mat, or a simple portrait session, I bring a unique perspective to create powerful and lasting images.
+                </p>
+                <a href="#contact" class="bg-white text-black font-bold py-3 px-6 rounded-full hover:bg-gray-200 transition-colors duration-300 inline-block">Let's Work Together</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="mb-20 md:mb-32">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-12 md:mb-16 tracking-tighter">What I Offer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-[#1a1a1a] p-8 rounded-lg border border-gray-800 hover:border-white transition-colors duration-300">
+                    <h3 class="text-2xl font-bold text-white mb-3">Motorsport & Automotive</h3>
+                    <p class="text-gray-400">Full race weekend coverage, track days, and private vehicle shoots. Capturing the speed, precision, and passion of motorsport.</p>
+                </div>
+                <div class="bg-[#1a1a1a] p-8 rounded-lg border border-gray-800 hover:border-white transition-colors duration-300">
+                    <h3 class="text-2xl font-bold text-white mb-3">BJJ & Combat Sports</h3>
+                    <p class="text-gray-400">Event photography for competitions, gym-based promotional content, and dynamic athlete portraits that showcase strength and skill.</p>
+                </div>
+                <div class="bg-[#1a1a1a] p-8 rounded-lg border border-gray-800 hover:border-white transition-colors duration-300">
+                    <h3 class="text-2xl font-bold text-white mb-3">Portraits & More</h3>
+                    <p class="text-gray-400">From powerful athlete headshots to capturing the personality of your beloved pets. Open to creative projects of all kinds.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-12 md:mb-16 tracking-tighter">Get In Touch</h2>
+            <div class="max-w-3xl mx-auto bg-[#1a1a1a] p-8 md:p-12 rounded-lg border border-gray-800">
+                 <p class="text-center text-gray-400 mb-8">Have a project in mind or just want to say hello? Fill out the form below or email me directly at <a href="mailto:example@email.com" class="text-white font-semibold hover:underline">hello@bengoulding.photo</a></p>
+                 <form action="#" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <input type="text" placeholder="Your Name" class="bg-gray-800 border border-gray-700 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-white text-white" required>
+                        <input type="email" placeholder="Your Email" class="bg-gray-800 border border-gray-700 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-white text-white" required>
+                    </div>
+                    <div class="mb-6">
+                         <input type="text" placeholder="Subject (e.g., BJJ Competition, Pet Shoot)" class="bg-gray-800 border border-gray-700 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-white text-white" required>
+                    </div>
+                    <div class="mb-6">
+                        <textarea placeholder="Tell me about your project..." rows="5" class="bg-gray-800 border border-gray-700 rounded-lg p-3 w-full focus:outline-none focus:ring-2 focus:ring-white text-white" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-white text-black font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors duration-300 text-lg">Send Message</button>
+                    </div>
+                 </form>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black mt-20 md:mt-32">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            <div class="flex justify-center mb-4">
+                 <a href="https://www.instagram.com/bengouldingphoto/" target="_blank" rel="noopener noreferrer" class="mx-3 hover:text-white transition-colors duration-300">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.792 2.792c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-2.792 2.792c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-2.792-2.792c-.247-.636-.416-1.363-.465-2.427C2.013 15.098 2 14.744 2 12.315s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 012.792-2.792c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7.044a5.27 5.27 0 100 10.54 5.27 5.27 0 000-10.54zM12 15.355a3.355 3.355 0 110-6.71 3.355 3.355 0 010 6.71zM16.85 8.435a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z" clip-rule="evenodd" /></svg>
+                 </a>
+            </div>
+            <p>&copy; <span id="year"></span> Ben Goulding Photography. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Shrink header on scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+            }
+        });
+    </script>
+</body>
+</html>
